@@ -10,9 +10,9 @@ import random as rnd
 
 bot = Client(
    "CARDER GUNNU",
-    api_id = "18314318",
-    api_hash = "bfd149250f0b9b9a9308b6d94ee68b3c",
-    bot_token = "5358913248:AAGzxNxMU0y8cxKyg5xkV6lGvelfRb2YWOc"
+    api_id = "19823424",
+    api_hash = "cb0fa4605ffa58013b0a382b0acba214",
+    bot_token = "5271728491:AAGI348y-5h-kYLEjsMT0qLja49kZRA69gU"
 )
 
 
