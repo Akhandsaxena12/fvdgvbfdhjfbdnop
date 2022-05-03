@@ -113,8 +113,8 @@ def demote(bot, message):
 
 @bot.on_message(filters.command('chk'))
 def chk(bot,message):
-    amoun = int(str(message.text).split()[1])
-    amou = amoun * 100
+    amount = int(str(message.text).split()[1])
+    amount = amount * 100
     tic = perf_counter()
     pips = str(message.text).split()[2]
     cc = str(pips).split("|")[0]
@@ -128,8 +128,8 @@ def chk(bot,message):
         return message.reply_text(
             "<b>BLACKLISTED BIN</b>"
             )
-    if amoun is None:
-     amoun=1
+    if amount is None:
+     amount=1
     
     stripe.api_key = "sk_test_4eC39HqLyjWDarjtT1zdp7dc"
     token = stripe.Token.create(
@@ -141,7 +141,7 @@ def chk(bot,message):
   },
 )
     charge =   stripe.Charge.create(
-    amount=amou,
+    amount=amount,
     currency="usd",
     source=token,
     description="Hunter Donation",
